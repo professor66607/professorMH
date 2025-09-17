@@ -8,35 +8,35 @@ Code:
 
 <head> 
 
-&nbsp;   <meta charset="UTF-8"> 
+   <meta charset="UTF-8"> 
 
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-&nbsp;   <title>basic j query</title> 
+   <title>basic j query</title> 
 
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
 </head> 
 
 <body> 
 
-&nbsp;   <h1>hello sahil</h1> 
+   <h1>hello sahil</h1> 
 
-&nbsp;   <button id="bt1">click me</button> 
+   <button id="bt1">click me</button> 
 
-&nbsp;   <script> 
+   <script> 
 
-&nbsp;       $(document).ready(function(){ 
+      $(document).ready(function(){ 
 
-&nbsp;           $("#bt1").click(function(){ 
+           $("#bt1").click(function(){ 
 
-&nbsp;               $("h1").text("welcome to our page"); 
+               $("h1").text("welcome to our page"); 
 
-&nbsp;           }); 
+           }); 
 
-&nbsp;       }); 
+    }); 
 
-&nbsp;   </script> 
+   </script> 
 
 </body> 
 
@@ -44,7 +44,7 @@ Code:
 
 Output: 
 
-&nbsp;                  
+                
 
 Code: 
 
@@ -54,45 +54,44 @@ Code:
 
 <head> 
 
-&nbsp;   <meta charset="UTF-8"> 
+   <meta charset="UTF-8"> 
 
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-&nbsp;   <title>events</title> 
-
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+   <title>events</title> 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
 </head> 
 
 <body> 
 
-&nbsp;   <p id="para">click or hover me</p> 
+   <p id="para">click or hover me</p> 
 
-&nbsp;   <script> 
+   <script> 
 
-&nbsp;       $(document).ready(function(){ 
+       $(document).ready(function(){ 
 
-&nbsp;           $("#para").click(function(){ 
+          $("#para").click(function(){ 
 
-&nbsp;               $(this).css("color","green"); 
+             $(this).css("color","green"); 
 
-&nbsp;           }); 
+         }); 
 
-&nbsp;           $("#para").mouseenter(function(){ 
+         $("#para").mouseenter(function(){ 
 
-&nbsp;               $(this).css("background","red"); 
+             $(this).css("background","red"); 
 
-&nbsp;           }); 
+           }); 
 
-&nbsp;           $("#para").mouseleave(function(){ 
+          $("#para").mouseleave(function(){ 
 
-&nbsp;               $(this).css("background","white"); 
+              $(this).css("background","white"); 
 
-&nbsp;           }); 
+          }); 
 
-&nbsp;       }); 
+       }); 
 
-&nbsp;   </script> 
+   </script> 
 
 </body> 
 
@@ -112,37 +111,34 @@ Code:
 
 <head> 
 
-&nbsp;   <meta charset="UTF-8"> 
+   <meta charset="UTF-8"> 
 
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>selector</title> 
 
-&nbsp;   <title>selector</title> 
-
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
 </head> 
 
 <body> 
 
-&nbsp;   <p class="cl1">this is class selector</p> 
+   <p class="cl1">this is class selector</p> 
 
-&nbsp;   <p id="id1">this is id selector</p> 
+  <p id="id1">this is id selector</p> 
 
-&nbsp;   <p> this is tag selector</p> 
+  <p> this is tag selector</p> 
 
-&nbsp;   <script> 
+  <script> 
 
-&nbsp;       $(document).ready(function(){ 
+      $(document).ready(function(){ 
 
-&nbsp;           $(".cl1").css("color","red"); 
+         $(".cl1").css("color","red"); 
 
-&nbsp;           $("#id1").css("font-size","20px"); 
+         $("#id1").css("font-size","20px"); 
 
-&nbsp;           $("p").css("font-weight","bold"); 
+         $("p").css("font-weight","bold"); 
 
-&nbsp;       }); 
-
-&nbsp;   </script> 
+    });   </script> 
 
 </body> 
 
@@ -150,7 +146,6 @@ Code:
 
 Output: 
 
-&nbsp;
 
 Code: 
 
@@ -160,43 +155,43 @@ Code:
 
 <head> 
 
-&nbsp;   <meta charset="UTF-8"> 
+   <meta charset="UTF-8"> 
 
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-&nbsp;   <title>hind and show</title> 
+   <title>hind and show</title> 
 
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
 </head> 
 
 <body> 
 
-&nbsp;   <p id="text1">this is a para</p> 
+   <p id="text1">this is a para</p> 
 
-&nbsp;   <button id="hide">hide button</button> 
+   <button id="hide">hide button</button> 
 
-&nbsp;   <button id="show">show button</button> 
+   <button id="show">show button</button> 
 
-&nbsp;   <script> 
+   <script> 
 
-&nbsp;       $(document).ready(function(){ 
+      $(document).ready(function(){ 
 
-&nbsp;           $("#hide").click(function(){ 
+        $("#hide").click(function(){ 
 
-&nbsp;               $("#text1").hide(); 
+             $("#text1").hide(); 
 
-&nbsp;           }); 
+        }); 
 
-&nbsp;           $("#show").click(function(){ 
+         $("#show").click(function(){ 
 
-&nbsp;               $("#text1").show(); 
+             $("#text1").show(); 
 
-&nbsp;           }); 
+          }); 
 
-&nbsp;       }); 
+      }); 
 
-&nbsp;   </script> 
+  </script> 
 
 </body> 
 
@@ -204,7 +199,7 @@ Code:
 
 Output: 
 
-&nbsp;                 
+              
 
 **Practical 6 jQuery Advanced:**
 
@@ -216,7 +211,6 @@ Output:
 
 **b) jQuery Callback, jQuery Get and Set Contents**
 
-&nbsp;
 
 Code: 
 
@@ -226,61 +220,139 @@ Code:
 
 <head> 
 
-&nbsp;   <meta charset="UTF-8"> 
 
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-&nbsp;   <title>animation</title> 
+  <title>animation</title> 
 
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+   <style> 
+      #box{ 
 
-&nbsp;   <style> 
+          height: 100px; 
 
-&nbsp;       #box{ 
+          width: 100px; 
 
-&nbsp;           height: 100px; 
+         background-color: green; 
 
-&nbsp;           width: 100px; 
+        position: relative;      } 
 
-&nbsp;           background-color: green; 
-
-&nbsp;           position: relative; 
-
-&nbsp;       } 
-
-&nbsp;   </style> 
+  </style> 
 
 </head> 
 
 <body> 
 
-&nbsp;   <button id="bt">click here for animation</button> 
+   <button id="bt">click here for animation</button> 
 
-&nbsp;   <div id="box"></div> 
+  <div id="box"></div> 
 
-&nbsp;   <script> 
+   <script> 
 
-&nbsp;       $(document).ready(function(){ 
+      $(document).ready(function(){ 
 
-&nbsp;           $("#bt").click(function(){ 
+          $("#bt").click(function(){ 
 
-&nbsp;               $("#box").animate({ 
+             $("#box").animate({ 
 
-&nbsp;                   left:'250px', 
+                 left:'250px', 
 
-&nbsp;                   height:'150px', 
+                 height:'150px', 
+                 width:'300px', 
 
-&nbsp;                   width:'300px', 
+                opacity:'0.1' 
 
-&nbsp;                   opacity:'0.1' 
+            },1000); 
 
-&nbsp;               },1000); 
+        }); 
 
-&nbsp;           }); 
+     }); 
+  </script> 
 
-&nbsp;       }); 
+</body> 
 
-&nbsp;   </script> 
+</html> 
+
+
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+
+   <title>channing</title> 
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+</head> 
+
+<body> 
+
+   <p id="text">watch me chnage</p> 
+
+   <button id="chain">click me</button> 
+
+
+
+   <script> 
+
+       $(document).ready(function(){ 
+
+          $("#chain").click(function(){ 
+
+              $("#text").css("color","red").slideUp(1000).slideDown(1000).fadeOut(1000).fadeIn(1000); 
+
+          }); 
+
+     }); 
+
+ </script> 
+
+ </script> 
+
+</body> 
+
+</html> 
+
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+
+
+  <title>jquery callback</title> 
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+</head> 
+
+<body> 
+
+  <button id="bt">this will fade the text</button> 
+
+   <p id="text">this will fade out first and then show alert</p> 
+
+  <script> 
+
+     $(document).ready(function(){ 
+
+         $("#bt").click(function(){ 
+
+            $("#text").fadeOut(1000,function(){ 
+
+                alert("text is hidden now"); 
+
+            }); 
+
+       }); 
+
+    }); 
+
+   </script> 
 
 </body> 
 
@@ -288,27 +360,8 @@ Code:
 
 Output: 
 
-&nbsp;    
 
-&nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;                       
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 Code: 
 
@@ -318,183 +371,49 @@ Code:
 
 <head> 
 
-&nbsp;   <meta charset="UTF-8"> 
+  <title>set and get content</title> 
 
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-&nbsp;   <title>channing</title> 
-
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 
 </head> 
 
 <body> 
 
-&nbsp;   <p id="text">watch me chnage</p> 
+  <p id="para">this is the og text</p> 
 
-&nbsp;   <button id="chain">click me</button> 
+  <button id="btget">get text</button> 
 
-&nbsp;
+ <button id="btset">set text</button> 
 
-&nbsp;   <script> 
+   <script> 
 
-&nbsp;       $(document).ready(function(){ 
+    $(document).ready(function(){ 
 
-&nbsp;           $("#chain").click(function(){ 
+        $("#btget").click(function(){ 
 
-&nbsp;               $("#text").css("color","red").slideUp(1000).slideDown(1000).fadeOut(1000).fadeIn(
+             alert($("#para").text()); 
 
-&nbsp;1000); 
+         }); 
 
-&nbsp;           }); 
+        $("#btset").click(function(){ 
 
-&nbsp;       }); 
+          $("#para").text("this is the new text"); 
 
-&nbsp;   </script> 
+        }); 
 
-&nbsp;   </script> 
+       }); 
 
-</body> 
-
-</html> 
-
-Output: 
-
-&nbsp;                                   
-
-&nbsp;
-
-Code: 
-
-<!DOCTYPE html> 
-
-<html lang="en"> 
-
-<head> 
-
-&nbsp;   <meta charset="UTF-8"> 
-
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-&nbsp;   <title>jquery callback</title> 
-
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-
-</head> 
-
-<body> 
-
-&nbsp;   <button id="bt">this will fade the text</button> 
-
-&nbsp;   <p id="text">this will fade out first and then show alert</p> 
-
-&nbsp;   <script> 
-
-&nbsp;       $(document).ready(function(){ 
-
-&nbsp;           $("#bt").click(function(){ 
-
-&nbsp;               $("#text").fadeOut(1000,function(){ 
-
-&nbsp;                   alert("text is hidden now"); 
-
-&nbsp;               }); 
-
-&nbsp;           }); 
-
-&nbsp;       }); 
-
-&nbsp;   </script> 
+  </script> 
 
 </body> 
 
 </html> 
 
-Output: 
+
+
 
 &nbsp;
 
-&nbsp;
-
-Code: 
-
-<!DOCTYPE html> 
-
-<html lang="en"> 
-
-<head> 
-
-&nbsp;   <meta charset="UTF-8"> 
-
-&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-&nbsp;   <title>set and get content</title> 
-
-&nbsp;   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-
-</head> 
-
-<body> 
-
-&nbsp;   <p id="para">this is the og text</p> 
-
-&nbsp;   <button id="btget">get text</button> 
-
-&nbsp;   <button id="btset">set text</button> 
-
-&nbsp;   <script> 
-
-&nbsp;       $(document).ready(function(){ 
-
-&nbsp;           $("#btget").click(function(){ 
-
-&nbsp;               alert($("#para").text()); 
-
-&nbsp;           }); 
-
-&nbsp;           $("#btset").click(function(){ 
-
-&nbsp;               $("#para").text("this is the new text"); 
-
-&nbsp;           }); 
-
-&nbsp;       }); 
-
-&nbsp;   </script> 
-
-</body> 
-
-</html> 
-
-Output: 
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
 
